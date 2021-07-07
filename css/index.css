@@ -1,0 +1,18 @@
+.header{
+    background: url(../img/главная/photo-0.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;
+    max-height: 1170px;
+}
+.gradient{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #002137 100%);
+    width: 100%;
+    position: absolute;
+    top: 40vh;
+    min-height: 20vh;
+    max-height: 300px;
+}
