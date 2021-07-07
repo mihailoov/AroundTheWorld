@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/logo-fon.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font.css">
+<link rel="stylesheet" type="text/css" href="css/bg-color.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/cities-and-capitals.css">
+<title>Города и столицы</title>
+</head>
+<body class="bg-dark_green">
+
+<!-- Кнопка вверх-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+            });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+        });
+    });
+</script>
+<!-- Кнопка вверх-->
+
+<div class="header" >
+    <div class="gradient"></div>
+    <div class="menu">
+        <h4>Меню</h4>
+        <a onclick="viewMenu()" style="cursor: pointer;"><img src="img/menu-icon.svg"></a> 
+    </div>
+    <div class="menu-block bg-dark_green" id="menu">
+        <a href="index.html"><img src="img/logo-fon.png"></a>
+        <a href="#">Чудеса света</a>
+        <a href="#">Особая архитектура</a>
+        <a href="#">Города и столицы</a>
+        <a href="#">О нас</a>
+    </div>
+    <script>
+        function viewMenu(){ 
+            if (document.getElementById("menu").style.display == 'none') { 
+                document.getElementById("menu").style.display = "flex";
+            }
+            else {
+                document.getElementById("menu").style.display = "none";
+            }
+        };
+    </script>
+    <div class="main-text">
+        <h1>Города и столицы</h1>
+    </div>
+</div>
+
+<div class="content">
+
+    <div class="content-photo-main">
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-1.jpg"></a>
+            <h4>Нью-Йорк</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-2.jpg"></a>
+            <h4>Париж</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-3.jpg"></a>
+            <h4>Токио</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-4.jpg"></a>
+            <h4>Москва</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+    </div>
+
+    <div class="content-photo-main">
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-5.jpg"></a>
+            <h4>Берлин</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-6.jpg"></a>
+            <h4>Санкт-Петербург</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-7.jpg"></a>
+            <h4>Мехико</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+        <div class="content-photo-main-block">
+            <a href="#"><img src="img/города-и-столицы/photo-8.jpg"></a>
+            <h4>Пекин</h4>
+            <a href="#">Подробнее ></a>
+            <div><br></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="display: flex; flex-direction: row;">
+            <a href="index.html"><img src="img/logo-fon.png"></a>
+            <h4>Вокруг<br>света</h4>
+        </div>
+        <div style="text-align: right;">
+            <a href="http://mihailoov.freevar.com"><img src="img/logo-mihailoov.svg"></a>
+        </div>
+    </div>
+</div>
+
+<div id="toTop"><h3>^</h3></div>
+
+</body>
+</html>
